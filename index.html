@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link href="Css/Style.css" rel="stylesheet">
+    } 
+</head>
+
+<body>
+	<div class="menu">
+	<div id="myDIV">
+  		<button class="btn">
+				<a href="#nd01">
+			Trang Chủ
+				</a>	
+		</button>
+  		<button class="btn active">
+				<a href="#nd02">
+			Giới Thiệu
+				</a>
+		</button>
+ 		<button class="btn">
+				<a href="#nd03">
+			Sản Phẩm
+				</a>
+		</button>
+ 		<button class="btn">
+				<a href="#nd04">	
+			Thêm
+				</a>
+		</button>
+	</div>
+	</div>
+	<div class="container">
+<!--		1-->
+		<div class="noidung1" id="nd01" style="color: black">
+			
+			<h1>Acer Nitro Mouse</h1>
+			<h2>Part Number: NP.MCE11.00G
+</h2>
+			
+		</div>
+		
+<!--		2-->
+		<div class="noidung2" id="nd02">
+			<div style="margin-top: -80px">
+		<h2>Giới thiệu giao diện</h2>
+			
+			<h4>GIAO DIỆN MÁY CHỦ THIẾT BỊ TRỎ</h4><br>
+
+			USB<br>
+
+			Công nghệ kết nối thiết bị trỏ<br>
+
+			Cáp<br>
+		
+			Chiều dài cáp thiết bị trỏ<br>
+
+			1,50 m<br>
+
+			Phát hiện chuyển động<br>
+
+			Quang học<br>
+
+			Giải quyết phong trào<br>
+
+			4000 dpi<br>
+
+			Tổng số nút<br>
+
+			số 8<br>
+			</div>
+			<div>
+				<img src="Img/Acer-Nitro-Mouse-NMW810-main.png" style="300px">
+			</div>
+		</div>
+		
+<!--		3-->
+		<div class="noidung" id="nd03">
+			<div style="margin-top: -50px">
+			<h2>Chuột Nitro (Bán lẻ)</h2>
+			
+			<img src="Img/Acer-Nitro-Mouse-NMW810-main.png" width="300px" >
+			<img src="Img/Acer-Nitro-Mouse-NMW810-photogallery-02.png" width="300px" >
+			<img src="Img/Acer-Nitro-Mouse-NMW810-photogallery-03.png" width="300px" >
+			<img src="Img/Acer-Nitro-Mouse-NMW810-photogallery-04.png" width="300px" >
+			</div><br>
+			<div style="display: flex">
+			<div>
+Loại gói<br>
+
+Bán lẻ<br>
+
+Loại sản phẩm<br>
+				</div>
+	<div style="margin-left: 80px">
+		Chuột<br>
+
+	Màu sắc<br>
+
+	Màu đen<br>
+			</div>
+		</div>
+			</div>
+		
+<!--		4-->
+		<div class="noidung" id="nd04">
+		
+			<div style="display: flex">
+					<h2>Hình ảnh sản phẩm</h2>
+			<div class="anh" style="margin-left: 200px">
+				<img src="Img/Nitro_Mouse_KSP_01_small.jpg" width="400px" style="margin-bottom: 50px">
+				<img src="Img/Nitro_Mouse_Lifestyle_02_small.jpg" width="400px">
+			</div>
+			<div class="anh">
+				<img src="Img/Nitro_Mouse_Lifestyle_03_small.jpg" width="400px" style="margin-bottom: 50px">
+				<img src="Img/IMG_20210913_001145.jpg" width="400px">
+			</div>
+			</div>
+		</div>
+		 
+		
+	</div>
+<!--	Menu-->
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+	  
+/*	  animitinon*/
+	  
+	   <script src="js/wow.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+</body>
+</html>
